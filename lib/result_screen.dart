@@ -12,6 +12,8 @@ class ResultScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Quiz Result'),
+        centerTitle: true, // Center-align the title
+        backgroundColor: Colors.blueGrey, // Background color of the app bar
       ),
       body: Center(
         child: Column(
@@ -21,6 +23,9 @@ class ResultScreen extends StatelessWidget {
               'Your Score: $score/$totalQuestions',
               style: TextStyle(fontSize: 24),
             ),
+
+            SizedBox(height: 40.0),
+
             ElevatedButton(
               onPressed: () {
                 // Navigate back to the initial quiz screen using the named route
