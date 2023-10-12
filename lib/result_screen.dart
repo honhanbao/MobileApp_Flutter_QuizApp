@@ -28,16 +28,6 @@ class ResultScreen extends StatelessWidget {
 
             ElevatedButton(
               onPressed: () {
-                // Navigate back to the welcome screen using the named route '/welcome'
-                Navigator.pushNamed(context, '/welcome');
-              },
-              child: Text('Home', style: TextStyle(fontSize: 24),),
-            ),
-
-            SizedBox(height: 40.0),
-
-            ElevatedButton(
-              onPressed: () {
                 // Navigate back to the initial quiz screen using the named route
                 Navigator.pushNamed(context, '/quiz');
               },
