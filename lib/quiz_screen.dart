@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'quiz_data.dart'; // Import the quiz data
-import 'result_screen.dart'; // Import the ResultScreen class
+import 'quiz_data.dart';      // Import the quiz data
+import 'result_screen.dart';  // Import the ResultScreen class
 
 class QuizScreen extends StatefulWidget {
   final List<Map<String, dynamic>> questions;
@@ -48,7 +48,7 @@ class _QuizScreenState extends State<QuizScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Quiz App'), // Set the app bar title
+        title: Text('Quiz App', style: TextStyle(fontSize: 24),), // Set the app bar title
         centerTitle: true, // Center-align the title
         backgroundColor: Colors.blueGrey, // Background color of the app bar
       ),

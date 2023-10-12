@@ -11,7 +11,7 @@ class ResultScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Quiz Result'),
+        title: Text('Quiz Result', style: TextStyle(fontSize: 24),),
         centerTitle: true, // Center-align the title
         backgroundColor: Colors.blueGrey, // Background color of the app bar
       ),
@@ -28,10 +28,20 @@ class ResultScreen extends StatelessWidget {
 
             ElevatedButton(
               onPressed: () {
+                // Navigate back to the welcome screen using the named route '/welcome'
+                Navigator.pushNamed(context, '/welcome');
+              },
+              child: Text('Home', style: TextStyle(fontSize: 24),),
+            ),
+
+            SizedBox(height: 40.0),
+
+            ElevatedButton(
+              onPressed: () {
                 // Navigate back to the initial quiz screen using the named route
                 Navigator.pushNamed(context, '/quiz');
               },
-              child: Text('Restart Quiz'),
+              child: Text('Restart Quiz', style: TextStyle(fontSize: 24),),
             ),
           ],
         ),
